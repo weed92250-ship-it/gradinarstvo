@@ -1,0 +1,1 @@
+const s=document.querySelector("#search");const cards=[...document.querySelectorAll("[data-title]")];if(s)s.addEventListener("input",()=>{const q=s.value.toLowerCase();cards.forEach(c=>c.hidden=!c.dataset.title.toLowerCase().includes(q))});
